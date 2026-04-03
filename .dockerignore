@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.venv/
+venv/
+streamlit.stdout.log
+streamlit.stderr.log
+Daily_Sales_Priorities.csv
+KG_improved.ipynb
+Untitled10.ipynb

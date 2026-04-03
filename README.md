@@ -107,6 +107,25 @@ Notes:
 - SHAP was kept optional in the code and removed from deployment dependencies to make cloud deployment lighter. The app will still work without SHAP explanations.
 - The dataset file and model artifacts are loaded from local relative paths, so they should remain in the repository when deploying.
 
+### Alternative Path: Railway
+
+This repo now includes a `Dockerfile`, which makes Railway deployment easier and more reliable for a Streamlit app.
+
+Steps:
+
+1. Push the repo to GitHub.
+2. In Railway, create a new project.
+3. Choose `Deploy from GitHub repo`.
+4. Select this repository.
+5. Railway will detect the `Dockerfile` and build the app.
+6. After deployment, open the generated Railway domain.
+
+Notes:
+
+- The container starts Streamlit with `--server.address=0.0.0.0` and uses Railway's `PORT`.
+- No extra start command should be needed if Railway uses the `Dockerfile`.
+- Keep `knowledge_gate_Shubham_dataset.csv` and the `models/` folder in the repository, because the app loads both at runtime.
+
 ## Run Tests
 
 ```powershell
