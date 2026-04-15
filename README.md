@@ -1,3 +1,15 @@
+---
+title: Knowledge Gate Conversion Intelligence
+emoji: 🎓
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: "1.44.1"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # Knowledge Gate Conversion Intelligence
 
 Lead scoring project for predicting which students are most likely to purchase a paid course based on their product behavior on the website.

@@ -7,3 +7,7 @@ __pycache__/
 venv/
 streamlit.stdout.log
 streamlit.stderr.log
+node_modules/
+frontend/dist/
+frontend/node_modules/
+*.mhtml
